@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WP Laravel Bridge
+ * Plugin Name: WP-Laravel Bridge
  * Description: Integrate WP with Laravel application.
  * Version:     1.0.0
  * Author:      ColoredCow
@@ -12,17 +12,17 @@
 
 add_action( 'admin_init', 'cc_wp_laravel_bridge' );
 function cc_wp_laravel_bridge() {
-   add_option( 'cc_app_url', '' );
-   register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_app_url' );
-   add_option( 'cc_client_id_key', '' );
-   register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_client_id_key' );
-   add_option( 'cc_client_secret_key', '' );
-   register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_client_secret_key' );
+	add_option( 'cc_app_url', '' );
+	register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_app_url' );
+	add_option( 'cc_client_id_key', '' );
+	register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_client_id_key' );
+	add_option( 'cc_client_secret_key', '' );
+	register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_client_secret_key' );
 }
 
-add_action('admin_menu', 'cc_wp_laravel_bridge_register_options_page');
+add_action( 'admin_menu', 'cc_wp_laravel_bridge_register_options_page' );
 function cc_wp_laravel_bridge_register_options_page() {
-  add_options_page('WP laravel bridge settings', 'WP laravel bridge settings', 'manage_options', 'cc-wp-laravel-bridge-settings', 'cc_wp_laravel_bridge_template');
+	add_options_page( 'WP-Laravel Bridge settings', 'WP-Laravel Bridge settings', 'manage_options', 'cc-wp-laravel-bridge-settings', 'cc_wp_laravel_bridge_template' );
 }
 
 function cc_wp_laravel_bridge_template() {
