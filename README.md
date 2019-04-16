@@ -1,4 +1,4 @@
-# WP-Laravel Bride
+# WP-Laravel Bridge
 Integrate your Laravel applications with WordPress, seamlessly.
 
 
