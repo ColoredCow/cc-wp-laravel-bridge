@@ -34,16 +34,16 @@
 	<form action="options.php" method="POST">
 		<?php settings_fields( 'cc_wp_laravel_bridge_options_group' ); ?>
 		<div class="form-group">
-			<label for="app_url">App URL</label>
-			<input type="text" class="form-control" name="app_url" id="app_url" value="<?php echo get_option( 'cc_app_url' ); ?>">
+			<label for="app_base_url">App Base URL</label>
+			<input type="text" class="form-control" name="app_base_url" id="app_base_url" value="<?php echo get_option( 'app_base_url' ); ?>">
 		</div>
 		<div class="form-group">
-			<label for="client_id">Client ID</label>
-			<input type="text" class="form-control" name="client_id" id="client_id" value="<?php echo get_option( 'cc_client_id_key' ); ?>">
+			<label for="app_api_client_id">App API Client ID</label>
+			<input type="text" class="form-control" name="app_api_client_id" id="app_api_client_id" value="<?php echo get_option( 'app_api_client_id' ); ?>">
 		</div>
 		<div class="form-group">
-			<label for="client_secret">Client Secret</label>
-			<input type="text" class="form-control" name="client_secret" id="client_secret" value="<?php echo get_option( 'cc_client_secret_key' ); ?>">
+			<label for="app_api_client_secret">App API Client Secret</label>
+			<input type="text" class="form-control" name="app_api_client_secret" id="app_api_client_secret" value="<?php echo get_option( 'app_api_client_secret' ); ?>">
 		</div>
 		<?php submit_button(); ?>
 	</form>

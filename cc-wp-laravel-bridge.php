@@ -12,12 +12,12 @@
 
 add_action( 'admin_init', 'cc_wp_laravel_bridge' );
 function cc_wp_laravel_bridge() {
-	add_option( 'cc_app_url', '' );
-	register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_app_url' );
-	add_option( 'cc_client_id_key', '' );
-	register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_client_id_key' );
-	add_option( 'cc_client_secret_key', '' );
-	register_setting( 'cc_wp_laravel_bridge_options_group', 'cc_client_secret_key' );
+	add_option( 'app_base_url', '' );
+	register_setting( 'cc_wp_laravel_bridge_options_group', 'app_base_url' );
+	add_option( 'app_api_client_id', '' );
+	register_setting( 'cc_wp_laravel_bridge_options_group', 'app_api_client_id' );
+	add_option( 'app_api_client_secret', '' );
+	register_setting( 'cc_wp_laravel_bridge_options_group', 'app_api_client_secret' );
 }
 
 add_action( 'admin_menu', 'cc_wp_laravel_bridge_register_options_page' );
