@@ -22,7 +22,7 @@ function cc_wp_laravel_bridge() {
 
 add_action( 'admin_menu', 'cc_wp_laravel_bridge_register_options_page' );
 function cc_wp_laravel_bridge_register_options_page() {
-	add_options_page( 'WP-Laravel Bridge settings', 'WP-Laravel Bridge settings', 'manage_options', 'cc-wp-laravel-bridge-settings', 'cc_wp_laravel_bridge_template' );
+	add_options_page( 'Web App Settings', 'Web App Settings', 'manage_options', 'cc-wp-laravel-bridge-settings', 'cc_wp_laravel_bridge_template' );
 }
 
 function cc_wp_laravel_bridge_template() {
