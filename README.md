@@ -1,3 +1,5 @@
+This repository is now maintained under the name API Connector WordPress and being actively developed [here](https://github.com/ColoredCow/api-connector-wordpress)
+
 # WP-Laravel Bridge
 Integrate your Laravel applications with WordPress, seamlessly.
 
