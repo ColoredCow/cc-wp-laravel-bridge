@@ -29,8 +29,8 @@
 </style>
 
 <div class="wrap w-50">
-	<h1 class="mb-3">WP-Laravel Bridge</h1>
-	<h2 class="mb-2">Basic settings</h2>
+	<h1 class="mb-3">Web App Settings</h1>
+	<h2 class="mb-2">General</h2>
 	<form action="options.php" method="POST">
 		<?php settings_fields( 'cc_wp_laravel_bridge_options_group' ); ?>
 		<div class="form-group">
